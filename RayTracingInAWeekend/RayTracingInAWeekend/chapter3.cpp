@@ -5,9 +5,9 @@
 using namespace std;
 
 vec3 color(const ray& r) 
-{
-	vec3 unit_direction = unit_vector(r.direction());
-	float t = 0.5*(unit_direction.y() + 1.0);
+{//以rgb格式返回某点的颜色
+	vec3 unit_direction = unit_vector(r.direction());//计算单位向量
+	float t = 0.5*(unit_direction.y() + 1.0);//
 	return (1.0 - t)*vec3(1.0, 1.0, 1.0) + t * vec3(0.5, 0.7, 1.0);
 }
 int main() {
@@ -16,10 +16,10 @@ int main() {
 	ofstream outfile(".\\result\\thechapter3.txt", ios_base::out);
 	outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
-	vec3 lower_left_corner(-2.0, -1.0, -1.0);
-	vec3 horizontal(4.0, 0.0, 0.0);
-	vec3 vertical(0.0, 2.0, 0.0);
-	vec3 origin(0.0, 0.0, 0.0);
+	vec3 lower_left_corner(-2.0, -1.0, -1.0);	//左下角
+	vec3 horizontal(4.0, 0.0, 0.0);				//长？（横向）
+	vec3 vertical(0.0, 2.0, 0.0);				//宽？（纵向）
+	vec3 origin(0.0, 0.0, 0.0);					//起点
 	for (int j = ny - 1; j >= 0; j--)
 	{
 		for (int i = 0; i < nx; i++)
