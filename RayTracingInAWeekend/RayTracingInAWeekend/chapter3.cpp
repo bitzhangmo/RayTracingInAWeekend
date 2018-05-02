@@ -83,7 +83,7 @@ vec3 color_shade(const ray& r)
 int main() {
 	int nx = 200;
 	int ny = 100;
-	ofstream outfile(".\\result\\thechapter5pic.txt", ios_base::out);
+	ofstream outfile(".\\result\\thechapter5pictest.txt", ios_base::out);
 	outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
 	vec3 lower_left_corner(-2.0, -1.0, -1.0);	//左下角
@@ -91,11 +91,19 @@ int main() {
 	vec3 vertical(0.0, 2.0, 0.0);				//宽？（纵向）
 	vec3 origin(0.0, 0.0, 0.0);					//起点
 	
-	hitable *list[2];
+	hitable *list[2];//可被撞击的两个球
 	list[0] = new sphere(vec3(0, 0, -1), 0.5);
 	list[1] = new sphere(vec3(0, -100.5, -1), 100);
 	hitable *world = new hitable_list(list, 2);
+
+	/*hitable *list[3];
+	list[0] = new sphere(vec3(0, 0, -1), 0.5);
+	list[1] = new sphere(vec3(0, -100.5, -1), 100);
+	list[2] = new sphere(vec3(-0.5, 2, -3), 0.3);
+	hitable *world = new hitable_list(list, 3);
 	
+	测试：可被撞击的三个球
+	*/
 	for (int j = ny - 1; j >= 0; j--)
 	{
 		for (int i = 0; i < nx; i++)
