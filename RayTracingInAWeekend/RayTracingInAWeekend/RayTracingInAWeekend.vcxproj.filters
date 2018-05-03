@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\head">
+      <UniqueIdentifier>{dbf2f4c7-5782-4503-8e15-c996ffe1b421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\code">
+      <UniqueIdentifier>{88ca3910-00cf-49c5-9b5f-be9e12782101}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -21,31 +27,40 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="vec3.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ray.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="camera.h">
+      <Filter>源文件\head</Filter>
     </ClInclude>
     <ClInclude Include="hitable.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="sphere.h">
-      <Filter>源文件</Filter>
+      <Filter>源文件\head</Filter>
     </ClInclude>
     <ClInclude Include="hitablelist.h">
-      <Filter>源文件</Filter>
+      <Filter>源文件\head</Filter>
     </ClInclude>
-    <ClInclude Include="camera.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="material.h">
+      <Filter>源文件\head</Filter>
+    </ClInclude>
+    <ClInclude Include="lambertian.h">
+      <Filter>源文件\head</Filter>
+    </ClInclude>
+    <ClInclude Include="metal.h">
+      <Filter>源文件\head</Filter>
+    </ClInclude>
+    <ClInclude Include="ray.h">
+      <Filter>源文件\head</Filter>
+    </ClInclude>
+    <ClInclude Include="sphere.h">
+      <Filter>源文件\head</Filter>
+    </ClInclude>
+    <ClInclude Include="vec3.h">
+      <Filter>源文件\head</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\code</Filter>
     </ClCompile>
-    <ClCompile Include="chapter6.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="chapter7.cpp">
+      <Filter>源文件\code</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

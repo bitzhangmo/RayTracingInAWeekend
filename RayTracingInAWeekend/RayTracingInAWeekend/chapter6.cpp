@@ -45,14 +45,16 @@ int main() {
 		{
 			vec3 col(0, 0, 0);
 			for (int s = 0; s < ns; s++)
-			{
+			{/*每个像素区域采样ns次*/
 				float random = rand() % (100) / (float)(100);
+				/*每个像素点的区域是以像素中心点为中心向外距离为1的范围。中心点位置+random相当于在这个像素点的区域内采样*/
 				float u = float(i+random) / float(nx);
 				float v = float(j+random) / float(ny);
 
 				ray r = cam.get_ray(u, v);
 				vec3 p = (r.point_at_parameter(2.0));
 				col += color(r, world);
+				/*将ns个采样的值累加并除以平均值作为该点最终的像素值*/
 			}
 			
 			col /= float(ns);
