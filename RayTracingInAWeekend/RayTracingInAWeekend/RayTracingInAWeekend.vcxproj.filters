@@ -54,12 +54,15 @@
     <ClInclude Include="vec3.h">
       <Filter>源文件\head</Filter>
     </ClInclude>
+    <ClInclude Include="dielectric.h">
+      <Filter>源文件\head</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件\code</Filter>
     </ClCompile>
-    <ClCompile Include="chapter7.cpp">
+    <ClCompile Include="Chapter9.cpp">
       <Filter>源文件\code</Filter>
     </ClCompile>
   </ItemGroup>
