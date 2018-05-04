@@ -23,10 +23,15 @@ And we can add some necessary operators and functions.
 We use spheres in ray tracers, and it's easy to calculate whether a ray hits a sphere.
 
 The ray center from **C=(cx,cy,cz)** to point **p=(x,y,z)** is **(p-C)**.
+
 All the points on the sphere must obey this rule:
+
 **dot((p-c),(p-c))=R*R**
+
 We can use two point to instead of any ray as **p(t)=A+t*B**.
+
 So we get the whole formula:
+
 **t*tdot(B,B)+2*t*dot(B,A-C)+dot(A-C,A-C)-R*R=0**
 
 ### Chapter 5
