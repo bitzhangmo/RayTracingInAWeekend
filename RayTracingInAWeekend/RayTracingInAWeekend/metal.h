@@ -9,6 +9,11 @@ public:
 	vec3 albedo;
 	float fuzz;
 };
+// 用于计算反射光线方向向量
+//
+// v：入射光线
+// n：入射点法向量
+// 返回反射光线方向向量
 vec3 reflect(const vec3& v, const vec3& n)
 {
 	return v - 2 * dot(v, n)*n;
