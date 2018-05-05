@@ -62,7 +62,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件\code</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter9.cpp">
+    <ClCompile Include="Chapter12.cpp">
       <Filter>源文件\code</Filter>
     </ClCompile>
   </ItemGroup>
