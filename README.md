@@ -2,6 +2,7 @@
 based the book &lt;Ray Tracing in a weekend>, I should finish it in the Winter hollday, but I was too lazy to finish it.
 
 Sorry for my teacher and senior [@Danielhu229](https://github.com/Danielhu229) and thanks to your guide!
+During this project I read the blog of [图形跟班](https://blog.csdn.net/libing_zeng),and thanks for his blogs' guide.
 
 ### theory
 Maybe this picture explain the relationship of camera(or eyes) and the pixel .
